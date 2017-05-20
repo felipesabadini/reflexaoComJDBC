@@ -3,6 +3,7 @@ package pos.trabalhojdbc.domain;
 import pos.trabalhojdbc.annotation.EntityJdbc;
 import pos.trabalhojdbc.annotation.IdJdbc;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @EntityJdbc
@@ -12,7 +13,15 @@ public class Pessoa {
     private String id;
     private String nome;
     private Integer idade;
-    private Double altura;
+    private BigDecimal altura;
+    private String teste;
+    private String novoTeste;
+    private String novoTeste2;
+    private String novoTeste3;
+    private String novoTeste4;
+    private String getNovoTeste5;
+
+    public Pessoa() {}
 
     public Pessoa(String nome) {
         this.id = UUID.randomUUID().toString();
@@ -23,7 +32,7 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public void setAltura(Double altura) {
+    public void setAltura(BigDecimal altura) {
         this.altura = altura;
     }
 
